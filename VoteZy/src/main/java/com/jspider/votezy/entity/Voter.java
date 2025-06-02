@@ -1,5 +1,7 @@
 package com.jspider.votezy.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,5 +30,6 @@ public class Voter {
 	private boolean hasVoted=false;
 	
 	@OneToOne(mappedBy = "voter", cascade = CascadeType.ALL) //we can use REMOVE
+	@JsonIgnore
 	private Vote vote; // inverse side
 }
