@@ -1,4 +1,4 @@
-package com.jspider.votezyrepository;
+package com.jspider.votezy.repository;
 
 import java.util.List;
 

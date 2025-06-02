@@ -1,4 +1,4 @@
-package com.jspider.votezyrepository;
+package com.jspider.votezy.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
