@@ -11,18 +11,18 @@ import com.jspider.votezy.entity.Voter;
 import com.jspider.votezy.exception.ResourceNotFoundException;
 import com.jspider.votezy.exception.VoteNotAllowedException;
 import com.jspider.votezy.repository.CandidateRepository;
-import com.jspider.votezy.repository.VoteRepositiory;
+import com.jspider.votezy.repository.VoteRepository;
 import com.jspider.votezy.repository.VoterRepository;
 
 import jakarta.transaction.Transactional;
 @Service
 public class VotingServices {
-	private VoteRepositiory voteRepository; //1
+	private VoteRepository voteRepository; //1
 	private CandidateRepository candidateRepository; //2.for the votecast
 	private VoterRepository voterRepository; //3. hasVoted will be true so its required
 	
 	@Autowired
-	public VotingServices(VoteRepositiory voteRepository, CandidateRepository candidateRepository,
+	public VotingServices(VoteRepository voteRepository, CandidateRepository candidateRepository,
 			VoterRepository voterRepository) {
 
 		this.voteRepository = voteRepository;

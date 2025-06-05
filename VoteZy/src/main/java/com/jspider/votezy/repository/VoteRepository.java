@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.jspider.votezy.entity.Vote;
 @Repository
-public interface VoteRepositiory extends JpaRepository<Vote, Long> {
+public interface VoteRepository extends JpaRepository<Vote, Long> {
 
 }
